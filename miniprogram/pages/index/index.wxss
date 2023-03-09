@@ -1,19 +1,42 @@
-/**index.wxss**/
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #aaa;
+
+.box {
+    width: 200rpx;
+    height: 170rpx;
+    line-height: 150rpx;
+    text-align: center;
+    border: 1px #000 solid;
+    box-sizing: border-box;
+    position: fixed;
+    transition: 0.5s ease-in-out;
+}
+.mask {
+  width: 200rpx;
+  height: 170rpx;
+  line-height: 150rpx;
+  text-align: center;
+  /* border: 1px #000 solid; */
+  box-sizing: border-box;
+  position: fixed;
+  backface-visibility:hidden;
+  perspective: 1000px;
+  transition: 0.5s ease-in-out;
 }
 
-.userinfo-avatar {
-  overflow: hidden;
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.light {
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+  /* background-image: radial-gradient(circle, rgba(255,255,255,1), rgba(255,255,255,0.5), rgba(255,255,255,0.1)); */
 }
-
-.usermotto {
-  margin-top: 200px;
+.result {
+  position: fixed;
+  transition: 0.5s ease-in-out;
+  width: 300rpx;
+  height: 270rpx;
+}
+.resultImg {
+  height: 100%;
+  width: 100%;
 }
